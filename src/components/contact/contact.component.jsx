@@ -14,8 +14,9 @@
 // }
 
 
-import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
+// import React, { useRef, useState } from 'react';
+import React from 'react';
+// import emailjs from 'emailjs-com';
 import ComingSoon from '../coming-soon/coming-soon.component';
 
 import './contact.style.scss';
@@ -54,7 +55,6 @@ const Contact = () => {
 
     return (
         <div className="contact">
-
             <ComingSoon page={"CONTACT"} />
         </div>
         /* <h2>Have a question or just want to reach out? Let's get in touch!</h2>

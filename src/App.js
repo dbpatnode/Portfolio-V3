@@ -1,6 +1,6 @@
 import React from 'react';
 import "./fontello/css/fontello.css"
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Header from '../src/components/header/header.component';
 import LandingPage from '../src/components/landingpage/landingpage.component';
 import Resume from '../src/components/resume/resume.component';

@@ -17,7 +17,6 @@ export default class About extends Component {
                         <h2>About Me</h2>
                         <p>
                             {resumeData.aboutme} Feel free to reach out with any inquiries <a href="/contact">here</a>.
-
                         </p>
                     </div>
                 </div>
