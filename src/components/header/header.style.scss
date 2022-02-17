@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 auto; /* centers text vertically in div */ 
+    z-index: 100;
+    left: 0px;
+    top:15;
+    
+    // logo
+    .logo {
+        color:#11ABB0 !important;
+        padding-left: 20px;
+        .logo-image{
+            width:80px;
+            height: 40px; 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(/images/logo.png);
+        }
+    }
+
+
+    .web-options {
+    font-size: larger;
+    padding-right: 10px;
+
+    .links {
+        display: flex;
+        gap: 40px;
+        a {
+            position:relative;
+            letter-spacing:5px;
+            gap:60px;
+
+            &:hover, &:focus { color: #e7e7e7; }
+            }
+
+            a:after {
+                content:"";
+                position:absolute;
+                left:0px;
+                bottom:-8px;
+                height:2px;
+                width:0%;
+                background:#0e8286;
+                transition:all 300ms ease-in-out;
+            }
+            a:hover:after {
+                width:100%;
+            }
+        } 
+
+}
+
+
+.navigation {
+    position: absolute;
+    top: -14px;
+    right:0px;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    clip-path:circle(25px at calc(100% - 45px) 45px);
+    transition:all 500ms ease-in-out;
+}
+
+    .navigation.active {
+    position: fixed;
+    height: 104vh;
+    background:#000000;
+    clip-path:circle(75%);
+
+    }
+
+// ** Hamburger button ** //
+    .navigation .ham-btn {
+        position: absolute;
+        top: 43px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .navigation .ham-btn span {
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:50%;
+        height:3.5px;
+        background:#11ABB0;
+        transition:all 200ms ease-in-out;
+    }
+
+    .navigation .ham-btn span:nth-child(1) {
+        top:-4%;
+    }
+
+    .navigation .ham-btn span:nth-child(2) {
+        top:9%;
+    }
+
+    .navigation .ham-btn span:nth-child(3) {
+        top:22%;
+    }
+
+    .navigation.active .ham-btn span:nth-child(1) {
+        top:50%;
+        transform:translate(-50%,-50%) rotate(45deg);
+    }
+
+    .navigation.active .ham-btn span:nth-child(2) {
+        display:none;
+    }
+
+    .navigation.active .ham-btn span:nth-child(3) {
+        top:50%;
+        transform:translate(-50%,-50%) rotate(-45deg);
+    }
+
+    // ** Inner larger links  **//
+    
+    .navigation .links {
+    position:absolute;
+    top:50%; // change top position to move inner links up and down
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    } 
+
+    .navigation .links a {
+    position:relative;
+    display:inline-block;
+    margin:20px 0px;
+    font-size:60px;
+    font-weight:600;
+    text-decoration:none;
+    color:#f5f5f5;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    }
+
+    .navigation .links a:after {
+        content:"";
+        position:absolute;
+        left:0px;
+        bottom:-5px;
+        height:2px;
+        width:0%;
+        background:#0e8286;
+        transition:all 300ms ease-in-out;
+    }
+
+    .navigation .links a:hover:after {
+        width:100%;
+    }
+
+
+    @media screen and (min-width: 1040px){
+        .navigation{
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 1040px){
+        .web-options {
+           display: none; 
+        }
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .header .navigation .links a {
+        font-size: 38px;
+    }
+ }

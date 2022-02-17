@@ -1,0 +1,187 @@
+.project-item-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+
+    .project-item {
+    text-align: center;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 550px;
+    align-items: center;
+
+
+    &:hover {
+        & .image {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+        & .collection-footer {
+            cursor: default;
+            opacity: 1;
+        }
+
+        & .name {
+            cursor: default;
+            opacity: 0.9;
+        }
+    }
+
+    .image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 3%;
+        width: 25vw;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        margin-top: 60px;
+    }
+
+
+
+
+    .card-top {
+        padding: 10px 25px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.883) !important;
+        backdrop-filter: blur(5px) !important;
+        border-radius: 5px;
+    }
+
+    .name {
+        color: rgb(26, 26, 26);
+    }
+
+
+    .bottom {
+        position:absolute;
+        bottom : 0;
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+        // background: #11ABB0;
+        // border-bottom-left-radius: 10px;
+        // border-bottom-right-radius: 10px;
+        width: 100%;
+        // padding: 12px 0px;
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .link {
+            border-radius: 5px;
+            background: #11ABB0;
+            margin: 0 12px;
+            padding: 5px 12px;
+            align-self: center;
+            border: 1px solid #00a1a7;
+            box-shadow: 10px 10px 41px 0px rgba(202,195,195,0.75);
+            -webkit-box-shadow: 10px 10px 41px 0px rgba(202,195,195,0.75);
+            -moz-box-shadow: 10px 10px 41px 0px rgba(202,195,195,0.75);
+            a {
+            color: #FFFFFF;
+            font-size: 28px;
+            margin: 7px;
+            &:hover {
+                cursor: pointer;
+                color: #333333;
+                border-color: #FFFFFF;
+            }
+            &:active {
+                color:#BBBBBB;
+                border-color:#BBBBBB;
+            }
+        }
+    }
+    }
+
+
+
+    .collection-footer {
+
+        opacity: 0;
+        display: flex;
+        font-size: 18px;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+
+            .description {
+                background-color: rgba(255, 255, 255, .15) !important;
+                backdrop-filter: blur(20px) !important;
+                border-radius: 10px;
+                padding: 15px;
+                width: 65%;
+                color: rgb(46, 46, 46);;
+                margin: 0 auto;
+            }
+    }
+}
+
+    .techs-wrapper{ 
+        margin-top: 20px;   
+        .techs {
+            img {
+                padding: 0px 2.5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .image {
+        margin-top: 20px !important;
+        min-width: 200px !important;
+        width: 100% !important;
+        height: 60vh !important;
+    }
+
+    .collection-footer {
+        opacity: 1 !important;
+    }
+    .card-top{
+        padding: 0 !important;
+        max-width: 100%;
+    }
+}
+}
+
+@media only screen and (max-width: 531px) { 
+    .project-item-wrapper {
+        .image {
+            margin-top: 0px !important;
+            width: 85vw !important;
+            height: 66vh !important;
+        }
+
+        .collection-footer {
+            opacity: 1 !important;
+        }
+
+        .techs-wrapper {
+            width: 100vw;
+            margin-top: -16px;
+        }
+    }
+}

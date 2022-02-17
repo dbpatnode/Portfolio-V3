@@ -1,0 +1,42 @@
+.footer-container {
+
+background-size: cover !important;
+-webkit-background-size: cover !important;
+height: 90px;
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+
+        a { 
+            color: #525252;
+                &:visited { 
+                    color: #525252;
+                }
+                &:hover {
+                    color: #fff;
+                }
+                &:focus {
+                    color: #fff;
+                }
+        }
+        .social-links {
+            margin: 18px 0 30px 0;
+            padding: 0;
+            font-size: 30px;
+
+            li {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                margin-left: 42px;
+                &:first-child { 
+                    margin-left: 0; 
+                }
+            }
+        }
+    }
+}
