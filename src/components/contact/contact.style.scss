@@ -1,62 +1,66 @@
 .contact {
+  margin: 20px 5px;
+  text-align: center;
+  font-size: larger;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height:85vh;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(/images/dark-grey.jpg) no-repeat top center;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    text-align: center;
-    overflow: hidden;
+  form {
+    width: 100%;
+    max-width: 800px;
 
-    // .email-form {
-    //     // width: 75vw;
-    //     // margin: 0 auto;
-    //     display: flex;
-    //     justify-content: center;
-    //     flex-direction: column;
-    //     align-items: center
-    // }
+    input {
+      border: 2px solid white;
+      outline: none;
+      border-radius: 2px;
+      width: 85%;
+      margin-top: 12px;
+      height: 30px;
+    }
 
-        // .email-form {
-        //     // height: 100%;
-        //     // margin: 0 10vw;
-        //     display: flex;
-        //     // flex-direction: column;
-        //     // align-items: center;
-        //     justify-content: center;
+    textarea {
+      border: 2px solid white;
+      outline: none;
+      //   border: 2px solid #11abb0;
+      margin-top: 12px;
+      width: 85%;
+      height: 20vh;
+      resize: none;
+    }
 
-        //         .inputs-wrapper {
-        //             width: 100vw;
-        //             display: flex;
-        //             flex-direction: column;
-        //             justify-content: center;
-        //             align-items: center;
-        //         .upper-input-wrapper {
-        //             display: flex;
-        //             flex-direction: row;
+    textarea:focus,
+    input:focus {
+      border: 2px solid #11abb0;
+    }
 
-        //             .upper-input {
-        //                 // width: 50%;
-        //                 display: flex;
-        //                 flex-direction: column;
+    input[type="submit"] {
+      border: 2px solid #11abb0;
+      background-color: #11abb0b1;
+      color: white;
+      font-size: large;
+      width: 80px;
+    }
+  }
+  .success {
+    background-color: rgba(0, 128, 0, 0.374);
+    margin: 5px;
+    border: 2px solid darkgreen;
+    color: green;
+    p {
+      margin: 5px;
+    }
+  }
 
-        //                 label{
-        //                     align-self: baseline
-        //                 }
-
-        //                 input {
-        //                     // width: 70%
-
-        //                 }
-        //             }
-        //         }
-
-        //     }
-        // }
-
+  .error {
+    background-color: rgba(255, 0, 0, 0.288);
+    margin: 5px;
+    border: 2px solid darkred;
+    color: red;
+    p {
+      margin: 5px;
+    }
+  }
 }
