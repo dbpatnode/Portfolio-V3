@@ -1,16 +1,15 @@
 .coming-soon {
-    width: 100vw;
-    height: 100vh;
-    // color: white;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
 
-    .content {
-        margin-top: 12%;
-        font-size: 60px;
-        font-family: 'Monoton', cursive;
-    }
+  .content {
+    margin-top: 12%;
+    font-size: 60px;
+    font-family: 'Monoton', cursive;
+  }
 }

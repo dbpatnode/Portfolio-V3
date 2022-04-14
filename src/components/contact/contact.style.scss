@@ -13,7 +13,7 @@
     max-width: 800px;
 
     input {
-      border: 2px solid white;
+      border: 2px solid rgb(229, 229, 229);
       outline: none;
       border-radius: 2px;
       width: 85%;
@@ -22,9 +22,9 @@
     }
 
     textarea {
-      border: 2px solid white;
+      border: 2px solid rgb(229, 229, 229);
       outline: none;
-      //   border: 2px solid #11abb0;
+      border-radius: 2px;
       margin-top: 12px;
       width: 85%;
       height: 20vh;
@@ -36,12 +36,15 @@
       border: 2px solid #11abb0;
     }
 
-    input[type="submit"] {
+    button {
       border: 2px solid #11abb0;
+      padding: 8px;
+      border-radius: 2px;
       background-color: #11abb0b1;
       color: white;
       font-size: large;
-      width: 80px;
+      margin-top: 10px;
+      width: 100px;
     }
   }
   .success {
