@@ -79,10 +79,8 @@ const Contact = () => {
         </div>
 
         <div>
-          {/* <input type="submit" value="Send" /> */}
           <button type='submit'>
-            {/* Send <i class='fa fa-angle-double-right'></i> */}
-            {/* Send <i class='fa fa-arrow-circle-o-right'></i> */}
+
             Send <i class='fa fa-paper-plane'></i>
           </button>
         </div>
