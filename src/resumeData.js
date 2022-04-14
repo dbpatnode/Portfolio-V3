@@ -1,211 +1,211 @@
 let resumeData = {
-  name: "Daniel Patnode",
-  role: "Frontend Engineer",
-  location: "Seattle, WA",
-  linkedinId: "daniel-patnode",
+  name: 'Daniel Patnode',
+  role: 'Frontend Engineer',
+  location: 'Seattle, WA',
+  linkedinId: 'daniel-patnode',
   roleDescription:
-    "A problem-solving creative who thrives in ambiguous environments, located in Seattle, WA. I love dabbling in all parts of web development, learning new technologies, diving into documentation and generally expanding my knowledge.",
+    'A problem-solving creative who thrives in ambiguous environments, located in Seattle, WA. I love dabbling in all parts of web development, learning new technologies, diving into documentation and generally expanding my knowledge.',
   socialLinks: [
     {
-      name: "linkedin",
-      url: "https://www.linkedin.com/in/daniel-patnode/",
-      className: "fa fa-linkedin",
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/daniel-patnode/',
+      className: 'fa fa-linkedin',
     },
     {
-      name: "github",
-      url: "https://github.com/dbpatnode",
-      className: "fa fa-github",
+      name: 'github',
+      url: 'https://github.com/dbpatnode',
+      className: 'fa fa-github',
     },
 
     {
-      name: "medium",
-      url: "https://danielpatnode.medium.com/",
-      className: "fa fa-medium",
+      name: 'medium',
+      url: 'https://danielpatnode.medium.com/',
+      className: 'fa fa-medium',
     },
   ],
   aboutme:
-    "Hi! Names Daniel. I'm a software engineer with a background in scientific glass blowing, an education from Washington State Universities College of Agricultural, Human, and Natural Resource Sciences, and a drive to continuously learn. In my time as an engineer I've contributed to over a dozen projects, a variety of  which I have seen through to completion from start to finish, and assisted with managing multiple projects for a wide variety of clientele ranging from  restaurant groups to utilities companies. In my spare time you can find me coding, camping, outdoors-ing, practicing Brazilian jiu-jitsu, exercising and hunting for the perfect cheeseburger.",
-  address: "Seattle, WA",
-  website: "https://github.com/dbpatnode",
+    'Software engineer with a prior background in scientific glass blowing and agriculture and a graduate of Washington State Universities College of Agricultural, Human, and Natural Resource Sciences. A continuous learner who loves to dive into new problems head on. Contributer to a multitude of projects, both as a lead and team member. Tinkerer with a history of working with a wide variety of clientele ranging from  restaurant groups to utilities companies. In my spare time you can find me coding, camping, outdoors-ing, practicing Brazilian jiu-jitsu, exercising, petting dogs and hunting for the perfect cheeseburger.',
+  address: 'Seattle, WA',
+  website: 'https://github.com/dbpatnode',
   education: [
     {
-      UniversityName: "Washington State University",
-      UniversityUrl: "https://wsu.edu/",
-      specialization: "Bachelor of Science in Agricultural and Food Sciences",
-      MonthOfPassing: "June",
-      YearOfPassing: "2014",
-      Achievements: "Founding member of the Organic Agriculture club.",
+      UniversityName: 'Washington State University',
+      UniversityUrl: 'https://wsu.edu/',
+      specialization: 'Bachelor of Science in Agricultural and Food Sciences',
+      MonthOfPassing: 'June',
+      YearOfPassing: '2014',
+      Achievements: 'Founding member of the Organic Agriculture club.',
     },
     {
-      UniversityName: "Flatiron School",
-      UniversityUrl: "https://flatironschool.com/",
-      specialization: "Full Stack Web Development",
-      MonthOfPassing: "November",
-      YearOfPassing: "2020",
-      Achievements: "Ruby on Rails, and JavaScript Based Programming",
+      UniversityName: 'Flatiron School',
+      UniversityUrl: 'https://flatironschool.com/',
+      specialization: 'Full Stack Web Development',
+      MonthOfPassing: 'November',
+      YearOfPassing: '2020',
+      Achievements: 'Ruby on Rails, and JavaScript Based Programming',
     },
   ],
   work: [
     {
-      CompanyName: "Transom Design",
-      CompanyUrl: "https://transom.design/",
-      specialization: "Junior Software Engineer",
-      MonthOfLeaving: "November",
-      YearOfLeaving: "2021",
+      CompanyName: 'Transom Design',
+      CompanyUrl: 'https://transom.design/',
+      specialization: 'Junior Software Engineer',
+      MonthOfLeaving: 'November',
+      YearOfLeaving: '2021',
       Achievements: [
         {
           achievment:
-            "Built 4 full-featured, performant, pixel perfect, cross-browser, accessible sites using Javascript, React, PHP, CSS, SCSS, and Tailwind after consultation with Sales team to identify areas of client site improvement",
+            'Built 4 full-featured, performant, pixel perfect, cross-browser, accessible sites using Javascript, React, PHP, CSS, SCSS, and Tailwind after consultation with Sales team to identify areas of client site improvement',
         },
         {
           achievment:
-            "Created a CSS library to decrease CSS build time and deliver projects to clients ~15% earlier than projected deadline",
+            'Created a CSS library to decrease CSS build time and deliver projects to clients ~15% earlier than projected deadline',
         },
         {
           achievment:
-            "Developed code snippets that allowed clients to autonomously edit their site content, which decreased future development time ",
+            'Developed code snippets that allowed clients to autonomously edit their site content, which decreased future development time ',
         },
       ],
     },
     {
-      CompanyName: "Unearth Labs",
-      CompanyUrl: "https://unearthlabs.com/",
-      specialization: "Front End Engineer Intern",
-      MonthOfLeaving: "May",
-      YearOfLeaving: "2021",
+      CompanyName: 'Unearth Labs',
+      CompanyUrl: 'https://unearthlabs.com/',
+      specialization: 'Front End Engineer Intern',
+      MonthOfLeaving: 'May',
+      YearOfLeaving: '2021',
       Achievements: [
         {
           achievment:
-            "Built and tested a cohesive data management tool using MithrilJS, SCSS, ChaiJS, and RPC protocol that supported the customer service team",
+            'Built and tested a cohesive data management tool using MithrilJS, SCSS, ChaiJS, and RPC protocol that supported the customer service team',
         },
         {
           achievment:
-            "Improved load time across platforms by 95.8% with requests to API taking < 5 seconds to complete",
+            'Improved load time across platforms by 95.8% with requests to API taking < 5 seconds to complete',
         },
       ],
     },
     {
-      CompanyName: "Quave CB",
-      CompanyUrl: "https://quavecb.com/",
-      specialization: "Scientific Glass Blower",
-      MonthOfLeaving: "June",
-      YearOfLeaving: "2020",
+      CompanyName: 'Quave CB',
+      CompanyUrl: 'https://quavecb.com/',
+      specialization: 'Scientific Glass Blower',
+      MonthOfLeaving: 'June',
+      YearOfLeaving: '2020',
       Achievements: [
         {
           achievment:
-            "Reduced expenditures on external lathe technicians while performing troubleshooting on ill-working lathe equipment through tactful techniques.",
+            'Reduced expenditures on external lathe technicians while performing troubleshooting on ill-working lathe equipment through tactful techniques.',
         },
         {
           achievment:
-            "Streamlined on-boarding process, enhanced productivity of training programs, and ensured highest level of cleanliness for staff members while aligning with upper management.",
+            'Streamlined on-boarding process, enhanced productivity of training programs, and ensured highest level of cleanliness for staff members while aligning with upper management.',
         },
         {
           achievment:
-            "Enhanced customer satisfaction, improved quality and process, and decreased material loss by 30% with implementation of raw material.",
+            'Enhanced customer satisfaction, improved quality and process, and decreased material loss by 30% with implementation of raw material.',
         },
       ],
     },
   ],
-  skillsDescription: "Languages:",
+  skillsDescription: 'Languages:',
   skills: [
     {
-      skillname: "CSS SCSS SASS",
+      skillname: 'CSS SCSS SASS',
     },
     {
-      skillname: "Reactjs",
+      skillname: 'Reactjs',
     },
     {
-      skillname: "HTML5",
+      skillname: 'HTML5',
     },
     {
-      skillname: "Javascript",
+      skillname: 'Javascript',
     },
     {
-      skillname: "JSON",
+      skillname: 'JSON',
     },
     {
-      skillname: "Ruby",
+      skillname: 'Ruby',
     },
     {
-      skillname: "Ruby-on-Rails",
+      skillname: 'Ruby-on-Rails',
     },
     {
-      skillname: "Git",
+      skillname: 'Git',
     },
     {
-      skillname: "SQL",
+      skillname: 'SQL',
     },
     {
-      skillname: "firebase",
+      skillname: 'firebase',
     },
     {
-      skillname: "JWT-Authentication",
+      skillname: 'JWT-Authentication',
     },
   ],
   portfolio: [
     {
-      name: "Robot Search",
+      name: 'Robot Search',
       description:
-        "Calls to an extrenal API of robot data, where robots can be searched based on name and tags",
-      imgUrl: "robot.png",
+        'Calls to an extrenal API of robot data, where robots can be searched based on name and tags',
+      imgUrl: 'robot.png',
       // githubUrl: "https://github.com/dbpatnode/real-transom-takehome",
-      linkUrl: "https://zyncrobots.netlify.app/",
-      techStack: ["html", "sass", "react", "netlify"],
+      linkUrl: 'https://zyncrobots.netlify.app/',
+      techStack: ['html', 'sass', 'react', 'netlify'],
     },
     {
-      name: "GS Burgers",
+      name: 'GS Burgers',
       description:
-        "Responsive mock up of menus and landing page for Great State Burgers.",
-      imgUrl: "GSB.jpg",
-      githubUrl: "https://github.com/dbpatnode/real-transom-takehome",
-      linkUrl: "https://transom-takehome.web.app/",
-      techStack: ["html", "sass", "react", "reactRouter", "firebase"],
+        'Responsive mock up of menus and landing page for Great State Burgers.',
+      imgUrl: 'GSB.jpg',
+      githubUrl: 'https://github.com/dbpatnode/real-transom-takehome',
+      linkUrl: 'https://transom-takehome.web.app/',
+      techStack: ['html', 'sass', 'react', 'reactRouter', 'firebase'],
     },
     {
-      name: "Portfolio V1",
+      name: 'Portfolio V1',
       description:
-        "First iteration of my portfolio site showcasing my work as a software developer.",
-      imgUrl: "setup.png",
+        'First iteration of my portfolio site showcasing my work as a software developer.',
+      imgUrl: 'setup.png',
       // "githubUrl":"",
-      linkUrl: "https://danielpatnode.netlify.app/",
-      techStack: ["html", "css", "javaScript", "sass", "netlify"],
+      linkUrl: 'https://danielpatnode.netlify.app/',
+      techStack: ['html', 'css', 'javaScript', 'sass', 'netlify'],
     },
     {
-      name: "BrewMaps",
+      name: 'BrewMaps',
       description:
-        "Brewery mapping application allows users to view breweries across the United States, while keeping an active log of their experiences.",
-      imgUrl: "brewmaps.png",
-      githubUrl: "https://github.com/dbpatnode/brewmaps-frontend",
+        'Brewery mapping application allows users to view breweries across the United States, while keeping an active log of their experiences.',
+      imgUrl: 'brewmaps.png',
+      githubUrl: 'https://github.com/dbpatnode/brewmaps-frontend',
       // "linkUrl":
-      youtube: "https://www.youtube.com/watch?v=B3SEAptSnTM&t=3s",
-      techStack: ["react", "ruby", "mapbox", "openBrewery"],
+      youtube: 'https://www.youtube.com/watch?v=B3SEAptSnTM&t=3s',
+      techStack: ['react', 'ruby', 'mapbox', 'openBrewery'],
     },
     {
-      name: "FavFest",
+      name: 'FavFest',
       description:
-        "Festival jouranling application that gives users the ability to view festivals and musical artists, while keeping a notes on their experiences",
-      imgUrl: "favfest.png",
-      githubUrl: "https://github.com/dbpatnode/favfest",
-      linkUrl: "https://favfest.herokuapp.com/",
-      techStack: ["html", "sass", "ruby", "postgresql", "heroku"],
+        'Festival jouranling application that gives users the ability to view festivals and musical artists, while keeping a notes on their experiences',
+      imgUrl: 'favfest.png',
+      githubUrl: 'https://github.com/dbpatnode/favfest',
+      linkUrl: 'https://favfest.herokuapp.com/',
+      techStack: ['html', 'sass', 'ruby', 'postgresql', 'heroku'],
     },
     {
-      name: "Oasis",
+      name: 'Oasis',
       description:
-        "Access point application that allows users to find lesser known rooftop parks and destinations.",
-      imgUrl: "oasis.png",
-      githubUrl: "https://github.com/tshlos/oasis",
-      youtube: "https://www.youtube.com/watch?v=NBWNe6LE7xw&t=1s",
-      techStack: ["react", "reactRouter", "ruby", "googleMaps", "sqlite"],
+        'Access point application that allows users to find lesser known rooftop parks and destinations.',
+      imgUrl: 'oasis.png',
+      githubUrl: 'https://github.com/tshlos/oasis',
+      youtube: 'https://www.youtube.com/watch?v=NBWNe6LE7xw&t=1s',
+      techStack: ['react', 'reactRouter', 'ruby', 'googleMaps', 'sqlite'],
     },
     {
-      name: "OHOHOH",
+      name: 'OHOHOH',
       description:
-        "Pet adoption application with both admin and user capabilities.",
-      imgUrl: "OHOHOH.jpg",
-      githubUrl: "https://github.com/cortezd334/OHOHOH",
-      youtube: "https://www.youtube.com/watch?v=iwHu_6Okfxo&t=143s",
-      techStack: ["html", "css", "ruby", "sqlite", "javaScript"],
+        'Pet adoption application with both admin and user capabilities.',
+      imgUrl: 'OHOHOH.jpg',
+      githubUrl: 'https://github.com/cortezd334/OHOHOH',
+      youtube: 'https://www.youtube.com/watch?v=iwHu_6Okfxo&t=143s',
+      techStack: ['html', 'css', 'ruby', 'sqlite', 'javaScript'],
     },
   ],
 };
