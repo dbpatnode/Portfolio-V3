@@ -3,8 +3,8 @@ import './blog-card.style.scss';
 import { Link } from 'react-router-dom';
 
 const BlogItem = ({ item }) => {
-  const { title, link, pubDate, description, thumbnail, id } = item;
-
+  const { title, pubDate, thumbnail, id, categories } = item;
+  console.log(categories);
   return (
     <div key={id} className='collection-item'>
       <Link to={`/blogs/${id}`}>
@@ -18,9 +18,16 @@ const BlogItem = ({ item }) => {
             height='auto'
           />
           <h2>{title}</h2>
-          <p>{pubDate}</p>
         </div>
       </Link>
+      <div>
+        <ul>
+          {categories.map((categorie) => (
+            <li>{categorie}</li>
+          ))}
+        </ul>
+      </div>
+      <p>{pubDate}</p>
     </div>
   );
 };

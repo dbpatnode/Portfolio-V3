@@ -1,4 +1,25 @@
 .blog {
-  height: 3000px;
-  //   background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      //   margin: 40px;
+      display: flex;
+      flex-direction: column;
+      max-width: 75vw;
+      figure {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
