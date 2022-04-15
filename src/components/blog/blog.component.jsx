@@ -9,7 +9,6 @@ const Blog = ({ blogs }) => {
   // returns blog with matching id as url
   const blog = blogs?.find((blog) => blog.id === parseInt(blogId));
 
-  // const { content } = blog;
   return (
     <div className='blog'>
       {blog?.content ? (

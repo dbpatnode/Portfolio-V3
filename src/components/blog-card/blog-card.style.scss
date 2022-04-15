@@ -1,0 +1,25 @@
+.blog-card {
+  max-width: 85vw;
+
+  img {
+    width: 400px;
+    height: auto;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 6px;
+
+    .tag {
+      background-color: #11abb09a;
+      color: rgb(214, 214, 214);
+      padding: 5px;
+      border-radius: 3px;
+      margin: 2px;
+    }
+  }
+}
