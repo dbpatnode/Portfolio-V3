@@ -1,4 +1,5 @@
 import './blog-card.style.scss';
+import BlogTags from './blog-tags.component';
 import { Link } from 'react-router-dom';
 
 const BlogItem = ({ item }) => {
@@ -11,13 +12,7 @@ const BlogItem = ({ item }) => {
         <h2>{title}</h2>
       </Link>
 
-      <ul className='tags'>
-        {categories.map((categorie, index) => (
-          <li className='tag' key={index}>
-            {categorie}
-          </li>
-        ))}
-      </ul>
+      <BlogTags tags={categories} />
       <p>{pubDate}</p>
     </div>
   );
