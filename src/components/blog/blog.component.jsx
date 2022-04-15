@@ -7,14 +7,14 @@ const Blog = ({ blogs }) => {
   const { blogId } = useParams();
 
   // returns blog with matching id as url
-  const blog = blogs.find((blog) => blog.id === parseInt(blogId));
+  const blog = blogs?.find((blog) => blog.id === parseInt(blogId));
 
-  const { content } = blog;
+  // const { content } = blog;
   return (
     <div className='blog'>
-      {blog ? (
+      {blog?.content ? (
         <div className='content'>
-          <Markup content={content} />
+          <Markup content={blog.content} />
         </div>
       ) : (
         <h2>Blog Not Found!</h2>
