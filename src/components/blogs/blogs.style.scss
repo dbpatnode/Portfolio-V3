@@ -1,7 +1,15 @@
 .blogs {
   display: flex;
-  flex-direction: column;
+  //   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogs {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
