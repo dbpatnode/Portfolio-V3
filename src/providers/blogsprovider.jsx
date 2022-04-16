@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 import { useEffect } from 'react';
+import { parse } from 'rss-to-json';
 
 export const BlogsContext = createContext(null);
 
@@ -10,11 +11,11 @@ export const useBlogsProvider = () => useContext(BlogsContext);
 const BlogsProvider = ({ children }) => {
   const [blogs, setBlogs] = useState([]);
 
-  const url =
-    'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@danielpatnode';
+  const mediumRSS = 'https://danielpatnode.medium.com/feed';
+  const jsonURL = `https://api.rss2json.com/v1/api.json?rss_url=${mediumRSS}`;
 
   useEffect(() => {
-    fetch(url)
+    fetch(jsonURL)
       .then((resp) => resp.json())
       .then((data) => {
         const blogs = data.items.map((blog, index) => {
