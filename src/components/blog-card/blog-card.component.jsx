@@ -3,8 +3,6 @@ import BlogTags from './blog-tags.component';
 import { Link } from 'react-router-dom';
 
 const BlogItem = ({ item }) => {
-  console.log(item);
-
   const { title, pubDate, thumbnail, id, categories } = item;
 
   return (
