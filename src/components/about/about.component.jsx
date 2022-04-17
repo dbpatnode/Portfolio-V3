@@ -1,7 +1,7 @@
-import resumeData from '../../resumeData';
 import './about.style.scss';
 
-const Card = () => {
+const Card = ({ resumeData }) => {
+  const { aboutme } = resumeData;
   return (
     <div id='about'>
       <div className='container'>
@@ -14,7 +14,7 @@ const Card = () => {
         <div className='information-container'>
           <h2>About Me</h2>
           <p>
-            {resumeData.aboutme} Feel free to reach out with any inquiries{' '}
+            {aboutme} Feel free to reach out with any inquiries{' '}
             <a href='/contact'>here</a>.
           </p>
         </div>

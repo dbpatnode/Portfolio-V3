@@ -1,11 +1,11 @@
 import HomePage from '../homepage/homepage.component';
 import About from '../about/about.component';
 
-const LandingPage = () => {
+const LandingPage = ({ resumeData }) => {
   return (
     <>
-      <HomePage />
-      <About />
+      <HomePage resumeData={resumeData} />
+      <About resumeData={resumeData} />
     </>
   );
 };

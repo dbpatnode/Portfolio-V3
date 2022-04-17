@@ -1,4 +1,5 @@
 import './fontello/css/fontello.css';
+import resumeData from './resumeData';
 import { Routes, Route } from 'react-router-dom';
 import Header from '../src/components/header/header.component';
 import LandingPage from '../src/components/landingpage/landingpage.component';
@@ -16,11 +17,13 @@ function App() {
   return (
     <div className='App'>
       <Header />
-
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/' element={<LandingPage resumeData={resumeData} />} />
+        <Route path='/resume' element={<Resume resumeData={resumeData} />} />
+        <Route
+          path='/projects'
+          element={<Projects resumeData={resumeData} />}
+        />
         <Route path='/blogs/:blogId' element={<Blog blogs={blogs} />} />
         <Route path='/blogs' element={<Blogs blogs={blogs} />} />
         <Route path='/contact' element={<Contact />} />

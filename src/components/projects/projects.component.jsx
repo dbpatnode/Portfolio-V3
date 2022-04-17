@@ -1,8 +1,7 @@
-import resumeData from '../../resumeData';
 import './projects.style.scss';
 import ProjectItem from '../project-item/project-item.component';
 
-const Projects = () => {
+const Projects = ({ resumeData }) => {
   const { portfolio } = resumeData;
   return (
     <div className='projects-container'>

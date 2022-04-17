@@ -1,10 +1,10 @@
 import './homepage.style.scss';
-import resumeData from '../../resumeData';
+
 import TopText from './TopText';
 import MiddleText from './MiddleText';
 import ScrollDownButton from './ScrollDownButton';
 
-const HomePage = () => (
+const HomePage = ({ resumeData }) => (
   <div className='homepage'>
     <div className='banner-text'>
       <TopText resumeData={resumeData} />
