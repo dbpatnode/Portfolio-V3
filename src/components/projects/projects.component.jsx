@@ -3,24 +3,13 @@ import './projects.style.scss';
 import ProjectItem from '../project-item/project-item.component';
 
 const Projects = () => {
+  const { portfolio } = resumeData;
   return (
     <div className='projects-container'>
       <div className='projects'>
-        {resumeData.portfolio &&
-          resumeData.portfolio.map((item) => {
-            return (
-              <ProjectItem
-                key={item.name}
-                name={item.name}
-                imgUrl={item.imgUrl}
-                description={item.description}
-                githubUrl={item.githubUrl}
-                linkUrl={item.linkUrl}
-                item={item}
-                techStack={item.techStack}
-                youtube={item.youtube}
-              />
-            );
+        {portfolio &&
+          portfolio.map((item) => {
+            return <ProjectItem item={item} />;
           })}
       </div>
     </div>

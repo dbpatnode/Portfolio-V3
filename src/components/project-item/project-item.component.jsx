@@ -2,15 +2,9 @@ import './project-item.style.scss';
 import { stacks } from './stacks.function';
 import ProjectLinks from './project-links.component';
 
-const ProjectItem = ({
-  name,
-  imgUrl,
-  description,
-  githubUrl,
-  linkUrl,
-  youtube,
-  techStack,
-}) => {
+const ProjectItem = ({ item }) => {
+  const { name, imgUrl, description, githubUrl, linkUrl, youtube, techStack } =
+    item;
   return (
     <div className='project-item-wrapper'>
       <div className='project-item'>
