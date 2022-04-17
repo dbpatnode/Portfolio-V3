@@ -1,10 +1,9 @@
-import React from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './header.style.scss';
 
-function Header() {
+const Header = () => {
   const [isActive, setActive] = useState(false);
   const ToggleClass = () => {
     setActive(!isActive);
@@ -73,6 +72,6 @@ function Header() {
       </div>
     </nav>
   );
-}
+};
 
 export default Header;

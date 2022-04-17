@@ -1,13 +1,14 @@
-import React from 'react';
-import resumeData from '../../resumeData';
 import SocialLinks from './SocialLinks';
 
-const MiddleText = () => (
-    <p className="second">
-        <h3> {resumeData.roleDescription}</h3>
-        <hr />
-        <SocialLinks />
+const MiddleText = ({ resumeData }) => {
+  const { roleDescription } = resumeData;
+  return (
+    <p className='second'>
+      <h3> {roleDescription}</h3>
+      <hr />
+      <SocialLinks resumeData={resumeData} />
     </p>
-)
+  );
+};
 
-export default MiddleText
+export default MiddleText;
