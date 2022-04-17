@@ -1,152 +1,148 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 .homepage {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   position: relative;
-   min-height: 95vh;
-   width: 100%;
-   background: linear-gradient(rgba(0, 0, 0, 0.5),
-   rgba(0, 0, 0, 0.5)), url(/images/homepage-background.jpg) no-repeat top center;
-   background-size: cover;
-   -webkit-background-size: cover;
-   text-align: center;
-   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/homepage-background.jpg) no-repeat top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  text-align: center;
+  overflow: hidden;
 
-   a {
-      cursor: pointer;
-      color: #fff;
-      height: 42px;
-      width: 42px;
-      font-size: 42px;
-      line-height: 42px;
-      border-radius: 100%;
-   
-         &:hover { 
-            color: #11ABB0;
-         } 
-      }
-   
-   .banner-text { 
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 90%; 
-      margin: 0 auto;
-      padding-top: 1em;
+  a {
+    cursor: pointer;
+    color: #fff;
+    height: 42px;
+    width: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    border-radius: 100%;
 
-      h3 {
-         font-weight: 400;
-         font-size: 20px;
-         line-height: 30px;
-      }
+    &:hover {
+      color: #11abb0;
+    }
+  }
 
-      hr {
-         width: 60%;
-         margin: 18px auto 24px auto;
-         border-color: #1d1d1d;
-         border-color: rgba(33, 33, 33, 0.1);
-      }
-   }
+  .banner-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
 
-   .social {    
-      display: flex;
-      justify-content: center;
-      margin: 24px 0;
+    h3 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    hr {
+      width: 60%;
+      margin: 18px auto 24px auto;
+      border-color: #1d1d1d;
+      border-color: rgba(33, 33, 33, 0.1);
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
       padding: 0;
-      font-size: 30px;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-      
-      li {
-         display: inline-block;
-         margin: 0 15px;
-         padding: 0;
-      }
-   }
+    }
+  }
 
-   .scrolldown  { 
-      flex: 1 1 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding-top: 7em;
-   }
+  .scrolldown {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 7em;
+  }
 
-   /* defines the animation */
-@-webkit-keyframes fadeInUp {
-   from {
-     opacity: 0;
-     transform: translate3d(0, 100%, 0);
-   }
-   to {
-     opacity: 1;
-     transform: none;
-   }
- }
- @keyframes fadeInUp {
-   from {
-     opacity: 0;
-     transform: translate3d(0, 100%, 0);
-   }
-   to {
-     opacity: 1;
-     transform: none;
-   }
- }
- p {
-   opacity: 0;
-   -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
-           animation: fadeInUp 1s ease-in-out 0s forwards;
- }
- p.first {
-   -webkit-animation-delay: .5s;
-           animation-delay: .5s;
- }
- p.second {
-   -webkit-animation-delay: 2s;
-           animation-delay: 2s;
- }
+  /* defines the animation */
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  p {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+  }
+  p.first {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  p.second {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
 
- p.third {
-   -webkit-animation-delay: 3s;
-           animation-delay: 3s;
- }
-
+  p.third {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
 }
 
-
 @media only screen and (max-width: 531px) {
-   .homepage {
-      a {
-         font-size: 34px;
-         line-height: 0px;
+  .homepage {
+    a {
+      font-size: 34px;
+      line-height: 0px;
+    }
+    .banner {
+      width: auto;
+      .banner-text {
+        width: auto;
+        h1 {
+          margin-top: 12vh;
+          padding: 0px;
+          font-size: 12vw;
+        }
+        h3 {
+          width: 90vw;
+        }
       }
-      .banner {
-         width: auto;
-         .banner-text {
-            width: auto;
-            h1 {
-               margin-top: 12vh;
-               padding: 0px;
-               font-size: 12vw;
-
-            }
-            h3 {
-               width: 90vw;
-            }
-         }
-      }
-
-   }
+    }
+  }
 }
 
 @media only screen and (max-width: 321px) {
-   .homepage {
-      h3 {
-         font-size:15px !important;
-      }
-   }
+  .homepage {
+    h3 {
+      font-size: 15px !important;
+    }
+  }
 }
