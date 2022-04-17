@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from 'react';
 import { useEffect } from 'react';
-import { parse } from 'rss-to-json';
 
 export const BlogsContext = createContext(null);
 
