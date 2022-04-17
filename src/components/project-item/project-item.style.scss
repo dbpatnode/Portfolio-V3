@@ -1,8 +1,6 @@
 .project-item-wrapper {
   display: flex;
   flex-direction: column;
-  // width: 33%;
-  // justify-content: center;
   align-items: center;
 
   .project-item {
@@ -19,16 +17,6 @@
         transform: scale(1.2);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       }
-
-      //   & .collection-footer {
-      //     cursor: default;
-      //     opacity: 1;
-      //   }
-
-      //   & .name {
-      //     cursor: default;
-      //     opacity: 0.9;
-      //   }
     }
 
     .image {
@@ -62,7 +50,6 @@
       background: rgba(255, 255, 255, 0);
       border-top: 3px solid rgba(128, 128, 128, 0.394);
       padding-top: 10px;
-      //   position: absolute;
       position: relative;
       bottom: 70px;
       display: flex;
@@ -111,16 +98,6 @@
       }
     }
 
-    // .collection-footer {
-    //   //   opacity: 0;
-    //   display: flex;
-    //   font-size: 18px;
-    //   -webkit-transition: all 400ms ease-out;
-    //   -moz-transition: all 400ms ease-out;
-    //   -o-transition: all 400ms ease-out;
-    //   -ms-transition: all 400ms ease-out;
-    //   transition: all 400ms ease-out;
-
     .description {
       font-size: 18px;
       background-color: rgba(255, 255, 255, 0.15) !important;
@@ -132,7 +109,6 @@
       margin: 0 auto;
     }
   }
-  //   }
 
   .techs-wrapper {
     position: relative;
@@ -170,8 +146,15 @@
 
 @media only screen and (max-width: 531px) {
   .project-item-wrapper {
+    .project-item {
+      &:hover {
+        & .image {
+          transform: scale(1);
+        }
+      }
+    }
     .image {
-      margin-top: 0px !important;
+      margin-top: 60px !important;
       width: 85vw !important;
       height: 66vh !important;
     }
