@@ -15,21 +15,17 @@ const ProjectItem = ({ item }) => {
           }}
         >
           <span className='card-top'>
-            <div className='header'>
-              <h2 className='name'>{name}</h2>
-            </div>
+            <h2 className='name'>{name}</h2>
           </span>
 
-          <div className='collection-footer'>
-            <span className='description'>{description}</span>
-          </div>
-
-          <ProjectLinks
-            githubUrl={githubUrl}
-            linkUrl={linkUrl}
-            youtube={youtube}
-          />
+          <span className='description'>{description}</span>
         </div>
+
+        <ProjectLinks
+          githubUrl={githubUrl}
+          linkUrl={linkUrl}
+          youtube={youtube}
+        />
       </div>
       <div className='techs-wrapper'>
         <span className='techs'>{stacks(techStack)}</span>
