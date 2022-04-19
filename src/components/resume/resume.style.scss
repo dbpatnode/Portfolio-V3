@@ -1,100 +1,102 @@
-
 #resume {
   color: #333333;
-    margin: 0 auto;
-    width: 100%;
-    background: #fff;
-    padding:70px 0px;
-    overflow: hidden;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 85vw;
+  background: rgb(232, 232, 232);
+  padding: 70px 0px;
+  border: 4px solid #0b7a7d;
+  border-radius: 10px;
+  overflow: hidden;
 
-    a {
-      color: #11ABB0;
+  a {
+    color: #11abb0;
+  }
+
+  li {
+    width: 85%;
+  }
+  .resume-section {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-column {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .content-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    span {
+      color: #333333;
+      border-bottom: 3px solid #11abb0;
+      padding-bottom: 6px;
     }
-    .resume-section {
-      width:90vw;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .header-column {
-      padding-top: 20px;
-      display: flex;
-      justify-content: center;
-      width: 50%;
-    }
+  }
 
-    .content-column {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+  }
 
+  p {
+    margin-right: 5%;
+  }
 
-    h1 {
-        
-        font: 18px/24px 'opensans-bold', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-
-        span {
-            color: #333333;
-            border-bottom: 3px solid #11ABB0;
-            padding-bottom: 6px;
-        }
-    }
-
-    h3 {
-        font: 25px/30px 'opensans-bold', sans-serif;
-
-    }
-
-    p {
-      margin-right: 5%;
-    }
-
-    
-// Work Section
+  // Work Section
   .work {
-      margin-top: 60px;
-      .resume-bullet-points {
-        list-style: none;
-        padding: 0 20px;
+    margin-top: 60px;
+    .resume-bullet-points {
+      list-style: none;
+      padding: 0 20px;
 
-        li {
-          line-height: 24px;
-          font-size: 16px;
-        }
-
-        li::before {
-          content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-          color: #10aaaf; /* Change the color */
-          font-weight: bold; /* If you want it to be bold */
-          font-size: 24px;
-          display: inline-block; /* Needed to add space between the bullet and the text */
-          width: 1em; /* Also needed for space (tweak if needed) */
-          margin-left: -1em; /* Also needed for space (tweak if needed) */
-        }
+      li {
+        line-height: 24px;
+        font-size: 16px;
       }
-      .date {
-        // font: 15px/24px 'opensans-regular', sans-serif;
-        margin-top: 6px;
+
+      li::before {
+        content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #10aaaf; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 24px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+    }
+    .date {
+      // font: 15px/24px 'opensans-regular', sans-serif;
+      margin-top: 6px;
     }
 
     .info {
       // font: 16px/24px 'librebaskerville-italic', serif;
-      color: #6E7881;
+      color: #6e7881;
       margin-bottom: 18px;
       margin-top: 9px;
 
       span {
-          margin-right: 5px;
-          margin-left: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
       }
     }
   }
 
-// Skills section 
+  // Skills section
   .skills {
     margin-top: 60px;
     .bars {
@@ -110,7 +112,7 @@
         background: #ccc;
         height: 42px;
         border-radius: 3px;
-        
+
         .bar-expand {
           position: absolute;
           left: 0;
@@ -124,15 +126,15 @@
           border-radius: 3px 0 0 3px;
         }
 
-          em {
-            font: 15px 'opensans-bold', sans-serif;
-            color: #313131;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: normal;
-            position: relative;
-            top: -36px;
-          }
+        em {
+          font: 15px 'opensans-bold', sans-serif;
+          color: #313131;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: normal;
+          position: relative;
+          top: -36px;
+        }
       }
 
       .skills-list {
@@ -178,15 +180,14 @@
   }
 }
 
-
 @media only screen and (max-width: 531px) {
   #resume {
     padding: 45px 0px;
     .resume-section {
-      width:100vw;
+      width: 100vw;
       flex-direction: column;
     }
-    
+
     .header-column {
       width: 100%;
       margin: 0 auto;
@@ -209,17 +210,22 @@
       }
     }
 
+    p {
+      width: 85%;
+    }
+    em {
+      width: 85%;
+    }
     .skills-list {
       padding: 12px 20px;
     }
 
     .resume-bullet-points {
       padding: 0 32px;
-        li {
-          line-height: 24px;
-        }
+      li {
+        line-height: 24px;
+      }
     }
-
 
     .work {
       margin-top: 30px;
