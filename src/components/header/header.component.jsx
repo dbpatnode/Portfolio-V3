@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <nav className='header'>
-      <div class='hamburger-wrapper'>
+      <div className='hamburger-wrapper'>
         <div className={isActive ? 'navigation active' : 'navigation'}>
           <div className='ham-btn' onClick={ToggleClass}>
             <span></span>
