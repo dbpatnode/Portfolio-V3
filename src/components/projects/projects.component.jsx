@@ -7,8 +7,8 @@ const Projects = ({ resumeData }) => {
     <div className='projects-container'>
       <div className='projects'>
         {portfolio &&
-          portfolio.map((item) => {
-            return <ProjectItem item={item} />;
+          portfolio.map((item, index) => {
+            return <ProjectItem item={item} key={index} />;
           })}
       </div>
     </div>
