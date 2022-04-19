@@ -4,7 +4,7 @@ let resumeData = {
   location: 'Seattle, WA',
   linkedinId: 'daniel-patnode',
   roleDescription:
-    'A problem-solving creative who thrives in ambiguous environments, located in Seattle, WA. I love dabbling in all parts of web development, learning new technologies, diving into documentation and generally expanding my knowledge.',
+    'A seattle based creative with a passion for solving complex problems who thrives in ambiguous environments. I love working in all parts of development, learning new technologies, diving into documentation and generally expanding my knowledge.',
   socialLinks: [
     {
       name: 'linkedin',
@@ -24,7 +24,7 @@ let resumeData = {
     },
   ],
   aboutme:
-    'Software engineer with a prior background in scientific glass blowing and agriculture and a graduate of Washington State Universities College of Agricultural, Human, and Natural Resource Sciences. A continuous learner who loves to dive into new problems head on. Contributer to a multitude of projects, both as a lead and team member. Tinkerer with a history of working with a wide variety of clientele ranging from  restaurant groups to utilities companies. In my spare time you can find me coding, camping, outdoors-ing, practicing Brazilian jiu-jitsu, exercising, petting dogs and hunting for the perfect cheeseburger.',
+    'Software engineer with a prior background in scientific glass blowing and agriculture and a graduate of Washington State University. A continuous learner who loves to dive into new problems head on. Contributer to a multitude of projects, both as a lead and team member. Tinkerer with a history of working with a wide variety of clientele ranging from  restaurant groups to utilities companies. In my spare time you can find me coding, camping, outdoors-ing, practicing Brazilian jiu-jitsu, exercising, petting dogs and hunting for the perfect cheeseburger.',
   address: 'Seattle, WA',
   website: 'https://github.com/dbpatnode',
   education: [
@@ -146,7 +146,7 @@ let resumeData = {
     {
       name: 'Robot Search',
       description:
-        'Calls to an extrenal API of robot data, where robots can be searched based on name and tags',
+        'Calls to an external API of robot data, where robots can be searched based on name and tags',
       imgUrl: 'robot.png',
       // githubUrl: "https://github.com/dbpatnode/real-transom-takehome",
       linkUrl: 'https://zyncrobots.netlify.app/',
@@ -183,7 +183,7 @@ let resumeData = {
     {
       name: 'FavFest',
       description:
-        'Festival jouranling application that gives users the ability to view festivals and musical artists, while keeping a notes on their experiences',
+        'Festival journaling application that gives users the ability to view festivals and musical artists, while keeping a notes on their experiences.',
       imgUrl: 'favfest.png',
       githubUrl: 'https://github.com/dbpatnode/favfest',
       linkUrl: 'https://favfest.herokuapp.com/',
