@@ -28,6 +28,23 @@ h1 {
   margin: 0;
 }
 
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #11abb0d4;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  transition: 220ms all ease-in-out;
+
+  &:hover {
+    color: #edf9fad4;
+    background-color: scale-color($color: #11abb0d4, $lightness: -20%);
+  }
+}
+
 .logo {
   font-size: x-large;
   font-family: 'Monoton';
