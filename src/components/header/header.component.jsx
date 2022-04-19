@@ -11,25 +11,6 @@ const Header = () => {
 
   return (
     <nav className='header'>
-      {/* LOGO */}
-      {/* <NavLink activeClassName='logo' to='/'>
-        <div className='logo-image' />
-      </NavLink> */}
-
-      {/* <div> */}
-      {/* WEB BUTTONS */}
-      {/* <div className='web-options'>
-          <div className='links'>
-            <NavLink exact to='/projects'>
-              projects
-            </NavLink>
-            <NavLink to='/blogs'> blogs </NavLink>
-            <NavLink to='/resume'> resume </NavLink>
-            <NavLink to='/contact'> contact </NavLink>
-          </div>
-        </div> */}
-
-      {/* MOBILE HAMBURGER BUTTON*/}
       <div class='hamburger-wrapper'>
         <div className={isActive ? 'navigation active' : 'navigation'}>
           <div className='ham-btn' onClick={ToggleClass}>
