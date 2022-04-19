@@ -80,7 +80,6 @@ const Contact = () => {
 
         <div>
           <button type='submit'>
-
             Send <i class='fa fa-paper-plane'></i>
           </button>
         </div>
