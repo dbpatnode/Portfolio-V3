@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //   padding: 0 20px;
-  //   height: 10vh;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin: 0 auto; /* centers text vertically in div */
@@ -11,70 +9,20 @@
   left: 0px;
   top: 15;
 
-  // logo
-  //   .logo {
-  //     color: #11abb0 !important;
-  //     padding-left: 20px;
-  //     .logo-image {
-  //       width: 80px;
-  //       height: 40px;
-  //       background-position: center;
-  //       background-size: cover;
-  //       background-repeat: no-repeat;
-  //       background-image: url(/images/logo.png);
-  //     }
-  //   }
-
-  //   .web-options {
-  //     font-size: larger;
-  //     padding-right: 10px;
-
-  //     .links {
-  //       display: flex;
-  //       gap: 40px;
-  //       a {
-  //         position: relative;
-  //         letter-spacing: 5px;
-  //         gap: 60px;
-
-  //         &:hover,
-  //         &:focus {
-  //           color: #e7e7e7;
-  //         }
-  //       }
-
-  //       a:after {
-  //         content: '';
-  //         position: absolute;
-  //         left: 0px;
-  //         bottom: -8px;
-  //         height: 2px;
-  //         width: 0%;
-  //         background: #0e8286;
-  //         transition: all 300ms ease-in-out;
-  //       }
-  //       a:hover:after {
-  //         width: 100%;
-  //       }
-  //     }
-  //   }
-
   .navigation {
     position: absolute;
-    top: -14px;
+    top: 0;
     right: 0px;
     width: 100%;
     height: 100%;
     z-index: 1000;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 500ms ease-in-out;
-    // padding-bottom: 30px;
-    // margin-bottom: 100px;
   }
 
   .navigation.active {
     position: fixed;
-    height: 104vh;
+    height: 100vh;
     background: #000000;
     clip-path: circle(75%);
   }

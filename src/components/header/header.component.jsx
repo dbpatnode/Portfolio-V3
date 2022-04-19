@@ -19,37 +19,27 @@ const Header = () => {
             <span></span>
           </div>
 
-          {/* HAMBURGER BUTTONS */}
           <div className='links'>
             <div className='link' onClick={ToggleClass}>
-              <NavLink activeClassName='nav-active' exact to='/'>
+              <NavLink exact='/' to='/'>
                 Home
               </NavLink>
             </div>
             <div className='link' onClick={ToggleClass}>
-              <NavLink activeClassName='nav-active' to='/projects'>
-                Projects
-              </NavLink>
+              <NavLink to='/projects'>Projects</NavLink>
             </div>
             <div className='link' onClick={ToggleClass}>
-              <NavLink activeClassName='nav-active' to='/blogs'>
-                Blogs
-              </NavLink>
+              <NavLink to='/blogs'>Blogs</NavLink>
             </div>
             <div className='link' onClick={ToggleClass}>
-              <NavLink activeClassName='nav-active' to='/resume'>
-                Resume
-              </NavLink>
+              <NavLink to='/resume'>Resume</NavLink>
             </div>
             <div className='link' onClick={ToggleClass}>
-              <NavLink activeClassName='nav-active' to='/contact'>
-                contact
-              </NavLink>
+              <NavLink to='/contact'>contact</NavLink>
             </div>
           </div>
         </div>
       </div>
-      {/* </div> */}
     </nav>
   );
 };
