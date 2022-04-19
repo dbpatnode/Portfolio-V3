@@ -96,16 +96,17 @@
       transform: none;
     }
   }
+  span,
   p {
     opacity: 0;
     -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
     animation: fadeInUp 1s ease-in-out 0s forwards;
   }
-  p.first {
+  span.first {
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
   }
-  p.second {
+  span.second {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
