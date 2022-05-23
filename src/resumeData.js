@@ -144,11 +144,19 @@ let resumeData = {
   ],
   portfolio: [
     {
+      name: 'AI Machine',
+      description: 'Interactive AI application',
+      imgUrl: 'openAI.png',
+      githubUrl: 'https://github.com/dbpatnode/OpenAIShopify',
+      linkUrl: 'https://openaishopify.netlify.app/',
+      techStack: ['html', 'sass', 'react', 'netlify', 'reactRouter', 'openAI'],
+    },
+    {
       name: 'Robot Search',
       description:
         'Calls to an external API of robot data, where robots can be searched based on name and tags',
       imgUrl: 'robot.png',
-      // githubUrl: "https://github.com/dbpatnode/real-transom-takehome",
+      // githubUrl: "https://github.com/dbpatnode/OpenAIShopify",
       linkUrl: 'https://zyncrobots.netlify.app/',
       techStack: ['html', 'sass', 'react', 'netlify'],
     },

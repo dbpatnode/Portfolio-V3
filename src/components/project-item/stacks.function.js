@@ -81,6 +81,16 @@ export const stacks = (tech) => {
             height='20'
           />
         );
+      // case 'openAI':
+      //   return (
+      //     <img
+      //       key={lang}
+      //       src='https://img.shields.io/static/v1?label=Hosted&message=openai&color=6762A6'
+      //       alt={lang}
+      //       width='100'
+      //       height='20'
+      //     />
+      //   );
       case 'netlify':
         return (
           <img
@@ -116,6 +126,16 @@ export const stacks = (tech) => {
           <img
             key={lang}
             src='https://img.shields.io/badge/-sqlite-005571?logo=sqlite&logoColor=white&style=flat'
+            alt={lang}
+            width='60'
+            height='20'
+          />
+        );
+      case 'openAI':
+        return (
+          <img
+            key={lang}
+            src='https://img.shields.io/badge/-openAI-51087E?logo=openai&logoColor=black&style=flat'
             alt={lang}
             width='60'
             height='20'
